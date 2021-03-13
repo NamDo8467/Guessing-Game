@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='author' content="Do Huynh">
+    <meta name="description" content="Guessing a word to win the game">
+    <title>Word Guessing</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container ">
+        <div class=" row align-items-end" style="height:60%;">
+            <div  class=" text-center " id="place-holder">
+                <h1 class="">Welcome to the guessing game</h1>
+                <h3 class="fst-italic fs-2 ">Here is the word you have to guess</h3>
+                <p class="fs-3"></p>
+            </div>
+        </div>
+
+        <div class=" row justify-content-center align-items-start">
+            <div class="col-md-4 text-center" id="answer-area">
+                <input  type="text" class="w-25" >
+                <div style="display:inline; padding-top:2% ;">
+                    <button class="btn btn-warning btn-sm" id="submit" >Submit</button>
+                    <button  class="btn btn-info btn-sm" id="restart">Change word</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <video src="Underwater - 6061.mp4" autoplay loop></video>
+
+    <script src="jquery-3.6.0.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>
