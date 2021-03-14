@@ -8,7 +8,6 @@ $(document).ready(function () {
         'lobster', 'future', 'vintage', 'rectangle', 'derivative']
 
     let randomWord = words[Math.floor(Math.random() * 20)]
-    console.log(randomWord)
 
     let placeHolder = $('#place-holder') //Grab the place holder where the underscore is
 
@@ -83,9 +82,15 @@ $(document).ready(function () {
 
     })
 
-    //Change a new word by reloading the page
+    //Change to a new random word
     $('#answer-area').on('click', '#restart', function () {
-        location.reload()
+        $('input').val('')
+        randomWord = words[Math.floor(Math.random() * 20)]
+        underScore = ''
+        for (const iterator of randomWord) {
+            underScore = underScore + '-' //add underscore 
+        }
+        placeHolder.children('p').empty().append(underScore)
     })
 
 
