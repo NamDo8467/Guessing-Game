@@ -32,7 +32,6 @@ $(document).ready(function () {
                 placeHolder.children('p').empty().append(answer)
             } else {
                 if (answer == upperCaseAnswer) {
-                    console.log(answer)
                     upperCaseOccurrences.forEach(element => {
                         underScore = underScore.substring(0, element) + answer.toLowerCase() + underScore.substring(element + 1)
                     });
@@ -65,7 +64,6 @@ $(document).ready(function () {
                     placeHolder.children('p').empty().append(answer)
                 } else {
                     if (answer == upperCaseAnswer) {
-                        console.log(answer)
                         upperCaseOccurrences.forEach(element => {
                             underScore = underScore.substring(0, element) + answer.toLowerCase() + underScore.substring(element + 1)
                         });
